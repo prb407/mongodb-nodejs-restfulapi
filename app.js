@@ -7,6 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use("/register", require("./routes/register"));
+app.use("/login", require("./routes/login"));
 
 mongoose
   .connect("mongodb://127.0.0.1:27017/mongodbdemo", {
